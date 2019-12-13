@@ -94,12 +94,49 @@ class SortingRobot:
         """
         return self._light == "ON"
 
+
+    # def sort_loop(self):
+
+
     def sort(self):
         """
         Sort the robot's list.
         """
         # going to implement bubble sort below
-        sorted = False  # set to false bc it is not yet sorted
+        while not self.light_is_on():
+            pass
+def sort_loop(self):
+        # while I can move right - for loop 
+            # self.swap_item() - picks up 1st card
+            # self.move_right()
+            # if compare_item == 1
+                # set light on swap is being made
+                # self.swap_item with item in front of it
+                # self.move_left() so I can put lower card to the left
+                # self.swap_item() put lower card in place
+                # self.move_right() in order to start the next loop index
+            # else:
+                # self.move_left()
+                # self.swap_item()
+                # self.move_right()
+        # if self.light_is_on():
+            # while self.can_move_left():
+            # self.move_left()
+            # self.set_light_off()
+        # else:
+            # self.set_light_on()
+   
+
+        # sorted = False  # set to false bc it is not yet sorted
+        # while not sorted:
+        #     sorted = True
+        #     for i in range(len(self) - 1):
+        #         # ^ check up until second to last position bc there is no number to the right of the last to compare
+        #         if self[i] > self[i+1]:
+        #             sorted = False
+        #             self[i], self[i+1] = self[i+1], self[i]
+        # return self
+    print(sort([4, 2, 5, 1, 3])) # test
 
 
 if __name__ == "__main__":

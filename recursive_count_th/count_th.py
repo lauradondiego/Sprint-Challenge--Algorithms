@@ -6,7 +6,7 @@ Your function must utilize recursion. It cannot contain any loops.
 
 
 def count_th(word):
-    if len(word) < 2:
+    if len(word) < 2:  # <- base case (or it will run forever!)
         return 0
         # ^ the word has to be at least length of 2 to contain "th"
     if word[0] + word[0+1] == "th":
@@ -18,7 +18,8 @@ def count_th(word):
 
 
 print(count_th("lmnbl"))  # test should print 0
-print(count_th("lmthnbl"))  # test should print 1
+print(count_th("lmnthbl"))  # test should print 1
+print(count_th("lmthnblthsdf"))  # test should print 2
 
 # for i in word:
 #     i = []
